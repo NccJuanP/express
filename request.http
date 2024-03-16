@@ -1,0 +1,26 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Paco Perez",
+    "edad" : 25,
+    "email" : "pacomacaco@gmail.com"
+}
+
+###
+
+GET http://localhost:9000/api/users/65f6222b137f2a352325655c HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users/65f6222b137f2a352325655c HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "Paco Perez Cardona Botero",
+    "edad" : 25,
+    "email" : "pacomacaco@gmail.com"
+}
+
+###
+DELETE http://localhost:9000/api/users/65f6222b137f2a352325655c HTTP/1.1
